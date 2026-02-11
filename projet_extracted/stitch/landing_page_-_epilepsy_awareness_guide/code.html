@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Epilepsy Awareness Guide</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Google Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7c3bed",
+                        "primary-dark": "#642bbc",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#171121",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "2xl": "2rem", "full": "9999px"},
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(124, 59, 237, 0.1)',
+                        'card': '0 0 0 1px rgba(0,0,0,0.03), 0 2px 8px rgba(0,0,0,0.04)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        /* Custom scrollbar for better mobile feel if needed */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 20px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-white font-display min-h-screen relative overflow-x-hidden selection:bg-primary/30">
+<!-- Decorative Top Gradient Background -->
+<div class="absolute top-0 w-full h-[500px] bg-gradient-to-b from-primary/10 to-transparent pointer-events-none z-0"></div>
+<!-- Main Container (Mobile Form Factor) -->
+<main class="relative z-10 max-w-md mx-auto min-h-screen flex flex-col pb-8 bg-white/50 dark:bg-background-dark sm:border-x sm:border-slate-200 dark:sm:border-slate-800 shadow-xl">
+<!-- Header / Nav -->
+<header class="flex justify-between items-center p-6">
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-primary text-2xl">health_and_safety</span>
+<span class="font-bold text-lg text-slate-800 dark:text-white">دليل الصرع</span>
+</div>
+<button class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-500">
+<span class="material-icons-round">menu</span>
+</button>
+</header>
+<!-- Hero Section -->
+<section class="flex flex-col items-center text-center px-6 pt-4 pb-10">
+<!-- Large Purple Ribbon Icon -->
+<div class="w-32 h-32 mb-6 relative flex items-center justify-center">
+<div class="absolute inset-0 bg-primary/20 rounded-full blur-2xl animate-pulse"></div>
+<!-- Using an SVG inline for the ribbon to ensure it's purple and clear without external dependency issues -->
+<svg class="w-24 h-24 text-primary relative z-10 drop-shadow-lg transform rotate-12 hover:rotate-0 transition-transform duration-500" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.25 2.25a3 3 0 00-3 3v4.318a3 3 0 00.879 2.121l9.58 9.581c.92.92 2.39 1.186 3.038.428a1.002 1.002 0 00.385-.582c.49-2.585-1.008-6.046-2.861-8.136-1.854-2.09-5.315-3.587-7.9-3.097A1.001 1.001 0 004.5 9.485V5.25a3 3 0 00-3-3H5.25zm5.558 2.222a2 2 0 11-2.828 2.828 2.222 2.222 0 012.828-2.828z" fill-rule="evenodd"></path>
+<!-- Ribbon-like approximation using standard path, conceptually simpler to use a filled icon -->
+<path class="hidden" d="M12.75 3.038c-1.375-1.12-3.418-1.047-4.632.167L3.13 8.193C1.655 9.668 1.516 12.01 2.82 13.64l6.095 7.62a1.125 1.125 0 001.765.044l2.677-2.677a2 2 0 012.829 0l2.677 2.677a1.125 1.125 0 001.765-.044l6.095-7.62c1.304-1.63 1.165-3.972-.31-5.447L20.882 3.205c-1.214-1.214-3.257-1.287-4.632-.167l-2.75 2.25a.75.75 0 01-.95 0l-2.75-2.25z"></path> <!-- Alternative shape hidden -->
+<path class="fill-white/30" d="M10.5 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+</svg>
+</div>
+<h1 class="text-3xl font-bold text-slate-900 dark:text-white mb-2 leading-tight">
+                الصرع ما يخوّفش..<br/>
+<span class="text-primary">نوبة و تعدّي</span>
+</h1>
+<p class="text-slate-500 dark:text-slate-400 mb-8 px-4 text-sm leading-relaxed">
+                مرحباً بيك في فضائنا الآمن. هنا باش تفهم كل شي على الصرع وتتعلم كيفاش تتعامل معاه بكل ثقة.
+            </p>
+<div class="flex flex-col w-full gap-3">
+<button class="w-full bg-primary hover:bg-primary-dark text-white font-medium py-4 px-6 rounded-xl shadow-lg shadow-primary/30 flex items-center justify-center gap-2 transition-all transform hover:scale-[1.02] active:scale-[0.98]">
+<span>ابدأ رحلة التعلم</span>
+<span class="material-icons-round text-xl transform rotate-180">arrow_right_alt</span>
+</button>
+<button class="w-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 font-medium py-4 px-6 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700 flex items-center justify-center gap-2 transition-all">
+<span>شاهد الفيديو التعريفي</span>
+<span class="material-icons-round text-primary text-xl">play_circle_filled</span>
+</button>
+</div>
+</section>
+<!-- Wave Pattern Divider -->
+<div class="w-full overflow-hidden leading-[0]">
+<svg class="relative block w-[calc(100%+1.3px)] h-[40px]" data-name="Layer 1" preserveaspectratio="none" viewbox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+<path class="fill-background-light dark:fill-background-dark opacity-10" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+</svg>
+</div>
+<!-- Grid Section -->
+<section class="px-5 pb-8">
+<h2 class="text-xl font-bold text-slate-800 dark:text-white mb-6 pr-1 border-r-4 border-primary pl-4">استكشف الدليل</h2>
+<div class="grid grid-cols-2 gap-4">
+<!-- Card 1: Definition -->
+<div class="group bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-card hover:shadow-soft transition-all duration-300 border border-slate-100 dark:border-slate-700 cursor-pointer">
+<div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-icons-round">psychology</span>
+</div>
+<h3 class="font-bold text-slate-800 dark:text-white mb-1">شنوة هو الصرع؟</h3>
+<p class="text-xs text-slate-500">فهم بسيط للمرض</p>
+</div>
+<!-- Card 2: Seizure Types -->
+<div class="group bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-card hover:shadow-soft transition-all duration-300 border border-slate-100 dark:border-slate-700 cursor-pointer">
+<div class="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-icons-round">category</span>
+</div>
+<h3 class="font-bold text-slate-800 dark:text-white mb-1">أنواع النوبات</h3>
+<p class="text-xs text-slate-500">مش كلها كيف كيف</p>
+</div>
+<!-- Card 3: First Aid (Important) -->
+<div class="col-span-2 relative group bg-red-50 dark:bg-red-900/20 p-5 rounded-2xl shadow-card hover:shadow-soft transition-all duration-300 border border-red-100 dark:border-red-900/30 cursor-pointer overflow-hidden">
+<div class="absolute top-4 left-4 bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded-full animate-pulse shadow-sm">
+                        مهم برشا
+                    </div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-red-100 dark:bg-red-800 text-red-600 dark:text-red-100 flex-shrink-0 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-icons-round text-2xl">medical_services</span>
+</div>
+<div>
+<h3 class="font-bold text-lg text-slate-800 dark:text-white mb-1">الإسعافات الأولية</h3>
+<p class="text-sm text-slate-600 dark:text-slate-300">كيفاش تتصرف وقت النوبة خطوة بخطوة.</p>
+</div>
+</div>
+</div>
+<!-- Card 4: Living with Epilepsy -->
+<div class="group bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-card hover:shadow-soft transition-all duration-300 border border-slate-100 dark:border-slate-700 cursor-pointer">
+<div class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-icons-round">sentiment_satisfied_alt</span>
+</div>
+<h3 class="font-bold text-slate-800 dark:text-white mb-1">حياتك مع الصرع</h3>
+<p class="text-xs text-slate-500">نصائح يومية</p>
+</div>
+<!-- Card 5: Video Library (New) -->
+<div class="relative group bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-card hover:shadow-soft transition-all duration-300 border border-slate-100 dark:border-slate-700 cursor-pointer">
+<div class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
+                        جديد
+                    </div>
+<div class="w-10 h-10 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-icons-round">play_lesson</span>
+</div>
+<h3 class="font-bold text-slate-800 dark:text-white mb-1">مكتبة الفيديو</h3>
+<p class="text-xs text-slate-500">تجارب وشهادات</p>
+</div>
+<!-- Card 6: Quiz -->
+<div class="group bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-card hover:shadow-soft transition-all duration-300 border border-slate-100 dark:border-slate-700 cursor-pointer">
+<div class="w-10 h-10 rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-icons-round">quiz</span>
+</div>
+<h3 class="font-bold text-slate-800 dark:text-white mb-1">اختبر معلوماتك</h3>
+<p class="text-xs text-slate-500">شنوة تعرف؟</p>
+</div>
+<!-- Card 7: Statistics -->
+<div class="group bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-card hover:shadow-soft transition-all duration-300 border border-slate-100 dark:border-slate-700 cursor-pointer">
+<div class="w-10 h-10 rounded-full bg-teal-100 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-icons-round">analytics</span>
+</div>
+<h3 class="font-bold text-slate-800 dark:text-white mb-1">أرقام وإحصائيات</h3>
+<p class="text-xs text-slate-500">في تونس والعالم</p>
+</div>
+<!-- Card 8: Resources -->
+<div class="group bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-card hover:shadow-soft transition-all duration-300 border border-slate-100 dark:border-slate-700 cursor-pointer">
+<div class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-icons-round">folder_special</span>
+</div>
+<h3 class="font-bold text-slate-800 dark:text-white mb-1">موارد ومراجع</h3>
+<p class="text-xs text-slate-500">كتب ومواقع</p>
+</div>
+</div>
+</section>
+<!-- Stats & Footer -->
+<footer class="mt-auto px-6 py-8 bg-slate-50 dark:bg-slate-900/50 rounded-t-[2.5rem] border-t border-slate-100 dark:border-slate-800 relative">
+<!-- Floating Banner -->
+<div class="absolute -top-6 left-6 right-6 mx-auto bg-primary text-white p-3 rounded-2xl shadow-lg shadow-primary/30 flex items-center justify-between animate-bounce" style="animation-duration: 3s;">
+<div class="flex items-center gap-3">
+<span class="bg-white/20 p-1.5 rounded-full material-icons-round text-sm">event</span>
+<div class="flex flex-col">
+<span class="text-xs font-light text-white/80">تذكير</span>
+<span class="text-sm font-bold">اليوم العالمي للصرع - 26 مارس</span>
+</div>
+</div>
+<span class="material-icons-round text-white/60 text-lg">chevron_left</span>
+</div>
+<div class="grid grid-cols-2 gap-8 text-center mt-6 mb-8">
+<div>
+<h4 class="text-3xl font-bold text-primary dark:text-primary-dark font-display">+1000</h4>
+<span class="text-sm text-slate-500">مستفيد</span>
+</div>
+<div>
+<h4 class="text-3xl font-bold text-primary dark:text-primary-dark font-display">+50</h4>
+<span class="text-sm text-slate-500">فيديو توعوي</span>
+</div>
+</div>
+<div class="flex justify-center gap-4 border-t border-slate-200 dark:border-slate-800 pt-6">
+<button class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 shadow-sm flex items-center justify-center text-slate-400 hover:text-primary transition-colors">
+<span class="material-icons-round text-lg">home</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 shadow-sm flex items-center justify-center text-slate-400 hover:text-primary transition-colors">
+<span class="material-icons-round text-lg">search</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 shadow-sm flex items-center justify-center text-slate-400 hover:text-primary transition-colors">
+<span class="material-icons-round text-lg">person</span>
+</button>
+</div>
+<p class="text-center text-xs text-slate-400 mt-6">
+                © 2023 دليل الصرع التونسي. جميع الحقوق محفوظة.
+            </p>
+</footer>
+<!-- Bottom Navigation Spacer if rendered in an app frame -->
+<div class="h-4 w-full"></div>
+</main>
+</body></html>
